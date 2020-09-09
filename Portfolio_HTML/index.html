@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" /> <!--The lang that is being used for the page-->
+    <title>Page Title</title> <!--The title the page will be dispalying in the tab and hsitory-->
+    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" /> <!--Adding the .cc file link-->
+</head>
+<body>
+    <div class="container"> <!--classes to style different elements of the page differently -->
+        <div class="nav_wrapper"> <!-- Navigation bar -->
+            <div class="left_side"><!--Left side of the nav bar-->
+
+                <div class="nav_link_wrapper active_nav_link">
+                    <a href="index.html">Home</a> <!-- Link to the home page -->
+                </div>
+
+                <div class="nav_link_wrapper">
+                    <a href="about.html">About</a> <!-- Link to the about page -->
+                </div>
+
+                <div class="nav_link_wrapper">
+                    <a href=" https://github.com/rgupta0218">GITHUB</a> <!-- Link to the github page -->
+                </div>
+
+            </div>
+
+            <div class="right_side"> <!-- Right side of the nav bar-->
+
+                <div class="brand">
+                    <div> RIA GUPTA</div>
+                </div> 
+            </div>
+        </div>
+        
+        <div class="content_wrapper">
+            <div class="portfolio_items_wrapper">
+
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_background_img" style="background-image:url(images/portfolio.jpg)"></div>
+
+                    <div class="img_text_wrapper">
+                        
+                        <div class="subtitle">
+                             My first website
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_background_img" style="background-image:url(images/portfolio1.jpg)"></div>
+
+                    <div class="img_text_wrapper">
+                       
+                        <div class="subtitle">
+                            My first website
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_background_img" style="background-image:url(images/portfolio2.jpg)"></div>
+
+                    <div class="img_text_wrapper">
+                       
+                        <div class="subtitle">
+                            My first website
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_background_img" style="background-image:url(images/wall_hanging.jpg)"></div>
+
+                    <div class="img_text_wrapper">
+                        
+                        <div class="subtitle">
+                            Wall hanging
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_background_img" style="background-image:url(images/crochet.jpg)"></div>
+
+                    <div class="img_text_wrapper">
+                        
+                        <div class="subtitle">
+                            My crochet work
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_background_img" style="background-image:url(images/calligraphy.jpg)"></div>
+
+                    <div class="img_text_wrapper">
+
+                        <div class="subtitle">
+                            My calligraphy
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_background_img" style="background-image:url(images/portfolio6.jpeg)"></div>
+
+                    <div class="img_text_wrapper">
+                       
+                        <div class="subtitle">
+                            Oreo Shake
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_background_img" style="background-image:url(images/portfolio7.jpeg)"></div>
+
+                    <div class="img_text_wrapper">
+                        
+                        <div class="subtitle">
+                            Chilli Paneer Puff
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_background_img" style="background-image:url(images/portfolio8.jpeg)"></div>
+
+                    <div class="img_text_wrapper">
+                       
+                        <div class="subtitle">
+                            Red Velvet with Cinamon
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_background_img" style="background-image:url(images/portfolio9.jpeg)"></div>
+
+                    <div class="img_text_wrapper">
+                        
+                        <div class="subtitle">
+                            Chinese Platter
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_background_img" style="background-image:url(images/portfolio10.jpeg)"></div>
+
+                    <div class="img_text_wrapper">
+                       
+                        <div class="subtitle">
+                            Ras Malai
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio_item_wrapper">
+                    <div class="portfolio_background_img" style="background-image:url(images/portfolio12.png)"></div>
+
+                    <div class="img_text_wrapper">
+                       
+                        <div class="subtitle">
+                            Bhel
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio_item_wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img_darken');
+        })
+
+         portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img_darken');
+        })
+    })
+
+</script>
+</html>
